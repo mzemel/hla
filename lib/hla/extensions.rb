@@ -1,14 +1,12 @@
 
 require_relative 'extensions/color_variance'
-require_relative 'extensions/cluster_color_variance'
 
 module  HLA
   module Extensions
 
     # autoload extensions
     EXTENSIONS = [
-      'color_variance'#,
-      # 'cluster_color_variance'
+      'color_variance'
     ]
 
     def self.included(base)
